@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTTP Basics</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h2>The World of HTTP</h2>
+    </div>
+
+    <nav>
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="topic1.html">HTTP Basics</a></li>
+            <li><a href="topic2.html">Evolution</a></li>
+            <li><a href="concepts.html">Key Concepts</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="about.html">About Me</a></li>
+
+        </ul>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <h1>HTTP Basics</h1>
+
+    <p>
+        Understanding how web browsers and servers communicate using requests and responses.
+    </p>
+
+</section>
+
+<main class="container">
+
+    <section class="card">
+
+        <h2>What is HTTP?</h2>
+
+        <p>
+            HTTP (Hypertext Transfer Protocol) is the system that allows communication between
+            web browsers and web servers. Every time you open a website, click a link, or load
+            an image, HTTP is working behind the scenes to transfer that information.
+        </p>
+
+        <p>
+            It acts like a set of rules that both the browser and server follow so they can
+            understand each other and exchange data correctly.
+        </p>
+
+    </section>
+    <section class="card">
+
+        <h2>How HTTP Works</h2>
+
+        <p>
+            HTTP works using a simple request and response system:
+        </p>
+
+        <ol>
+
+            <li>The browser sends a request to a web server.</li>
+            <li>The server receives and processes the request.</li>
+            <li>The server sends back a response.</li>
+            <li>The browser displays the content to the user.</li>
+
+        </ol>
+
+        <table>
+
+            <tr>
+                <th>Step</th>
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td>Request</td>
+                <td>Browser asks the server for a webpage or resource.</td>
+            </tr>
+
+            <tr>
+                <td>Processing</td>
+                <td>Server finds or generates the requested content.</td>
+            </tr>
+
+            <tr>
+                <td>Response</td>
+                <td>Server sends the data back to the browser.</td>
+            </tr>
+
+        </table>
+
+    </section>
+    <section class="card">
+
+        <h2>Request & Response Flow</h2>
+
+        <img src="images/request-response.png"
+             alt="HTTP request response diagram"
+             class="banner-image">
+
+        <p>
+            This diagram shows how a browser sends a request to a server and receives a response.
+            This cycle happens every time you interact with a website.
+        </p>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Why HTTP is Important</h2>
+
+        <ul>
+
+            <li>It allows websites to load properly.</li>
+            <li>It transfers images, text, and videos.</li>
+            <li>It supports web applications and APIs.</li>
+            <li>It connects browsers and servers worldwide.</li>
+
+        </ul>
+
+        <p>
+            Without HTTP, the modern internet would not function because there would be no
+            standard way for devices to communicate.
+        </p>
+
+    </section>
+    <section class="card">
+
+        <h2>Stateless System</h2>
+
+        <p>
+            HTTP is considered stateless, meaning each request is independent.
+            The server does not automatically remember previous requests.
+        </p>
+
+        <p>
+            Because of this, technologies like cookies and sessions are used to
+            keep users logged in and store information such as shopping carts.
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        This website was created as a class project for
+        <a href="https://ksuweb.github.io/IT3203/" target="_blank">
+            IT3203 Web Development
+        </a>.
+    </p>
+
+</footer>
+
+</body>
+
+</html>
