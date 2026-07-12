@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTTP Basics</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        <h2>The World of HTTP</h2>
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="topic1.html">HTTP Basics</a></li>
+            <li><a href="topic2.html">Evolution</a></li>
+            <li><a href="concepts.html">Key Concepts</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="about.html">About Me</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+
+<section class="hero">
+
+    <h1>HTTP Basics</h1>
+
+    <p>
+        Understanding how web browsers and servers communicate using requests and responses.
+    </p>
+
+</section>
+
+
+
+
+
+<main class="container article-container">
+
+
+
+    <section class="card">
+
+
+        <h2>What is HTTP?</h2>
+
+
+        <p>
+            HTTP stands for Hypertext Transfer Protocol. It is a communication protocol that allows web browsers and servers to exchange information across the internet.
+        </p>
+
+
+        <p>
+            Whenever a user visits a website, clicks a link, submits a form, or loads an image, HTTP helps transfer the required information between the client and server.
+        </p>
+
+
+        <p>
+            HTTP works as a set of rules that allows different devices and applications to understand how data should be requested and delivered.
+        </p>
+
+
+    </section>
+
+
+
+
+
+    <section class="card">
+
+
+        <h2>How HTTP Works</h2>
+
+
+        <p>
+            HTTP follows a request and response model. A browser acts as the client and sends a request to a web server. The server processes the request and sends back a response containing the requested information.
+        </p>
+
+
+
+        <ol>
+
+            <li>
+                The user enters a website address into a browser.
+            </li>
+
+            <li>
+                The browser creates an HTTP request.
+            </li>
+
+            <li>
+                The request is sent to the web server.
+            </li>
+
+            <li>
+                The server processes the request.
+            </li>
+
+            <li>
+                The server sends an HTTP response back.
+            </li>
+
+            <li>
+                The browser displays the webpage.
+            </li>
+
+        </ol>
+
+
+
+        <p>
+            HTTP communication happens almost instantly when a user visits a website. The response may include HTML documents, images, videos, CSS files, and JavaScript code needed to create the webpage.
+        </p>
+
+
+
+        <table>
+
+
+            <tr>
+
+                <th>Step</th>
+
+                <th>Description</th>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Request
+                </td>
+
+                <td>
+                    The browser asks the server for a webpage or resource.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Processing
+                </td>
+
+                <td>
+                    The server searches for or creates the requested information.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Response
+                </td>
+
+                <td>
+                    The server sends the requested data back to the browser.
+                </td>
+
+            </tr>
+
+
+        </table>
+
+
+    </section>
+
+
+
+
+
+
+    <section class="card">
+
+
+        <h2>Request and Response Flow</h2>
+
+
+        <img src="images/request-response.png"
+             alt="HTTP request response diagram"
+             class="banner-image">
+
+
+        <p>
+            This diagram shows how a browser communicates with a server. This process occurs every time a user interacts with a website.
+        </p>
+
+
+    </section>
+
+
+
+
+
+
+
+    <section class="card">
+
+
+        <h2>Common HTTP Methods</h2>
+
+
+        <p>
+            HTTP methods describe the action a client wants a server to perform. Different methods are used depending on the type of information being exchanged.
+        </p>
+
+
+
+        <table>
+
+
+            <tr>
+
+                <th>
+                    Method
+                </th>
+
+                <th>
+                    Purpose
+                </th>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td>
+                    GET
+                </td>
+
+                <td>
+                    Retrieves information from a server, such as loading a webpage.
+                </td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td>
+                    POST
+                </td>
+
+                <td>
+                    Sends information to a server, such as submitting a form.
+                </td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td>
+                    PUT
+                </td>
+
+                <td>
+                    Updates existing information stored on a server.
+                </td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td>
+                    DELETE
+                </td>
+
+                <td>
+                    Removes information from a server.
+                </td>
+
+            </tr>
+
+
+
+        </table>
+
+
+    </section>
+
+
+
+
+
+
+
+    <section class="card">
+
+
+        <h2>HTTP Status Codes</h2>
+
+
+        <p>
+            HTTP responses include status codes that describe whether a request was successful or if an error occurred.
+        </p>
+
+
+
+        <ul>
+
+            <li>
+                200 - Successful request
+            </li>
+
+            <li>
+                301 - Resource permanently moved
+            </li>
+
+            <li>
+                403 - Access denied
+            </li>
+
+            <li>
+                404 - Page not found
+            </li>
+
+            <li>
+                500 - Server error
+            </li>
+
+        </ul>
+
+
+    </section>
+
+
+
+
+
+
+
+    <section class="card">
+
+
+        <h2>Why HTTP is Important</h2>
+
+
+        <ul>
+
+            <li>
+                Allows websites to load properly.
+            </li>
+
+            <li>
+                Transfers text, images, videos, and files.
+            </li>
+
+            <li>
+                Supports websites, applications, and APIs.
+            </li>
+
+            <li>
+                Allows communication between millions of devices.
+            </li>
+
+        </ul>
+
+
+        <p>
+            Without HTTP, modern internet services such as online shopping, streaming, social media, and cloud applications would not function.
+        </p>
+
+
+    </section>
+
+
+
+
+
+
+
+    <section class="card">
+
+
+        <h2>Stateless System</h2>
+
+
+        <p>
+            HTTP is considered stateless because each request is independent. The server does not automatically remember previous requests from the same user.
+        </p>
+
+
+        <p>
+            Because of this limitation, technologies such as cookies and sessions are used to remember login information, preferences, and shopping cart data.
+        </p>
+
+
+    </section>
+
+
+
+
+
+
+
+    <section class="card">
+
+
+        <h2>Continue Learning</h2>
+
+
+        <p>
+            Now that you understand HTTP basics, explore how HTTP has evolved and test your knowledge with the interactive quiz.
+        </p>
+
+
+        <a href="topic2.html" class="button">
+            Explore HTTP Evolution
+        </a>
+
+
+        <a href="quiz.html" class="button">
+            Take Quiz
+        </a>
+
+
+    </section>
+
+
+
+
+
+</main>
+
+
+
+
+
+<footer>
+
+    <p>
+        Created by Dejah Adamson | IT3203 Web Development Project
+    </p>
+
+
+</footer>
+
+
+
+
+</body>
+
+</html>

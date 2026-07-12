@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTTP Quiz</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h2>The World of HTTP</h2>
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topic1.html">HTTP Basics</a></li>
+            <li><a href="topic2.html">Evolution</a></li>
+            <li><a href="concepts.html">Key Concepts</a></li>
+            <li><a class="active" href="quiz.html">Quiz</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="about.html">About Me</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>HTTP Knowledge Quiz</h1>
+
+    <p>
+        Test your understanding of HTTP concepts, versions, and web communication.
+    </p>
+
+</section>
+
+
+<main class="container">
+
+
+    <section class="card">
+
+        <form id="quizForm">
+
+
+            <div class="quiz-question">
+
+                <h3>1. Fill in the Blank</h3>
+
+                <p>
+                    HTTP stands for:
+                </p>
+
+                <input
+                        type="text"
+                        id="q1"
+                        placeholder="Enter your answer">
+
+            </div>
+
+
+
+            <div class="quiz-question">
+
+                <h3>2. Multiple Choice</h3>
+
+                <p>
+                    What is the main purpose of HTTP?
+                </p>
+
+                <label>
+                    <input type="radio" name="q2" value="correct">
+                    To transfer information between browsers and servers
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="wrong">
+                    To create computer hardware
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="wrong">
+                    To replace operating systems
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="wrong">
+                    To store files permanently
+                </label>
+
+            </div>
+
+
+
+            <div class="quiz-question">
+
+                <h3>3. Multiple Choice</h3>
+
+                <p>
+                    Which HTTP version introduced multiplexing?
+                </p>
+
+                <label>
+                    <input type="radio" name="q3" value="wrong">
+                    HTTP/0.9
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="wrong">
+                    HTTP/1.0
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="correct">
+                    HTTP/2
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="wrong">
+                    HTTP/1.1
+                </label>
+
+            </div>
+
+
+
+            <div class="quiz-question">
+
+                <h3>4. Multiple Choice</h3>
+
+                <p>
+                    Which protocol provides secure communication using encryption?
+                </p>
+
+                <label>
+                    <input type="radio" name="q4" value="wrong">
+                    HTTP
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="correct">
+                    HTTPS
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="wrong">
+                    FTP
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="wrong">
+                    DNS
+                </label>
+
+            </div>
+
+
+
+            <div class="quiz-question">
+
+                <h3>5. Multi-Selection</h3>
+
+                <p>
+                    Which of the following are benefits of modern HTTP versions?
+                    (Select all that apply)
+                </p>
+
+
+                <label>
+                    <input type="checkbox" name="q5" value="correct">
+                    Faster data transfer
+                </label>
+
+
+                <label>
+                    <input type="checkbox" name="q5" value="correct">
+                    Improved performance
+                </label>
+
+
+                <label>
+                    <input type="checkbox" name="q5" value="correct">
+                    Better security support
+                </label>
+
+
+                <label>
+                    <input type="checkbox" name="q5" value="wrong">
+                    Requires users to install a new browser every day
+                </label>
+
+
+            </div>
+
+
+
+            <button type="button" onclick="gradeQuiz()">
+                Submit Quiz
+            </button>
+
+
+            <button type="reset" onclick="resetQuiz()">
+                Reset Quiz
+            </button>
+
+
+        </form>
+
+
+        <div id="results"></div>
+
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        Created by Dejah Adamson | IT3203 Web Development Project
+    </p>
+
+</footer>
+
+
+<script src="quiz.js"></script>
+
+
+</body>
+
+</html>
