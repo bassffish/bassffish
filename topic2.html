@@ -2,13 +2,19 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Evolution of HTTP</title>
+
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
+
 <body>
+
 
 <header>
 
@@ -16,8 +22,11 @@
         <h2>The World of HTTP</h2>
     </div>
 
+
     <nav>
+
         <ul>
+
             <li><a href="index.html">Home</a></li>
             <li><a href="topic1.html">HTTP Basics</a></li>
             <li><a class="active" href="topic2.html">Evolution</a></li>
@@ -25,224 +34,502 @@
             <li><a href="quiz.html">Quiz</a></li>
             <li><a href="references.html">References</a></li>
             <li><a href="about.html">About Me</a></li>
+
         </ul>
+
     </nav>
+
 
 </header>
 
+
+
+
 <section class="hero">
 
-    <h1>Evolution of HTTP</h1>
+<h1>Evolution of HTTP</h1>
 
-    <p>
-        HTTP has continuously evolved to improve speed, efficiency, reliability, and security as the internet has grown.
-    </p>
-
-</section>
-
-<section class="stats">
-
-    <div class="stat">
-        <h2>1991</h2>
-        <p>HTTP/0.9 Introduced</p>
-    </div>
-
-    <div class="stat">
-        <h2>1996</h2>
-        <p>HTTP/1.0 Released</p>
-    </div>
-
-    <div class="stat">
-        <h2>1997</h2>
-        <p>HTTP/1.1 Standardized</p>
-    </div>
-
-    <div class="stat">
-        <h2>2015</h2>
-        <p>HTTP/2 Released</p>
-    </div>
-
-    <div class="stat">
-        <h2>2022</h2>
-        <p>HTTP/3 Standardized</p>
-    </div>
+<p>
+Explore how HTTP has improved from a simple document transfer system into the foundation of modern web communication.
+</p>
 
 </section>
 
-<main class="container">
 
-    <section class="card">
 
-        <h2>Why HTTP Needed to Evolve</h2>
 
-        <p>
-            As websites became larger and more interactive, the original versions of HTTP could not keep up with increasing demands. New versions introduced better performance, stronger security, and faster communication between browsers and servers.
-        </p>
 
-    </section>
+<main class="container article-container">
 
-    <section class="card">
 
-        <h2>HTTP Timeline</h2>
 
-        <table>
+<section class="card">
 
-            <tr>
-                <th>Version</th>
-                <th>Major Improvement</th>
-            </tr>
 
-            <tr>
-                <td>HTTP/0.9</td>
-                <td>Only supported simple HTML pages.</td>
-            </tr>
+<h2>Why HTTP Needed to Evolve</h2>
 
-            <tr>
-                <td>HTTP/1.0</td>
-                <td>Added headers and supported multiple file types.</td>
-            </tr>
 
-            <tr>
-                <td>HTTP/1.1</td>
-                <td>Persistent connections improved loading speed.</td>
-            </tr>
+<p>
+The first version of HTTP was created in the early 1990s when the internet was mostly used for sharing simple documents. As websites became more advanced, they required faster connections, better security, and the ability to transfer larger amounts of data.
+</p>
 
-            <tr>
-                <td>HTTP/2</td>
-                <td>Multiplexing allowed multiple requests simultaneously.</td>
-            </tr>
 
-            <tr>
-                <td>HTTP/3</td>
-                <td>Uses QUIC for faster and more reliable communication.</td>
-            </tr>
+<p>
+New versions of HTTP were created to improve website performance and support modern technologies such as cloud computing, mobile applications, streaming services, and APIs.
+</p>
 
-        </table>
 
-    </section>
+</section>
 
-    <section class="card">
 
-        <h2>HTTP/0.9</h2>
 
-        <p>
-            HTTP/0.9 was the very first version of the protocol. It could only transfer simple HTML documents and supported only the GET method. There were no status codes or request headers.
-        </p>
 
-    </section>
 
-    <section class="card">
 
-        <h2>HTTP/1.0</h2>
 
-        <p>
-            HTTP/1.0 introduced request and response headers, making communication between browsers and servers much more flexible. It also supported images, documents, and other media types.
-        </p>
+<section class="card">
 
-    </section>
 
-    <section class="card">
+<h2>HTTP Version Timeline</h2>
 
-        <h2>HTTP/1.1</h2>
 
-        <p>
-            HTTP/1.1 became the most widely used version for many years. It introduced persistent connections, allowing browsers to reuse the same connection instead of opening a new one for every request.
-        </p>
+<table>
 
-    </section>
 
-    <section class="card">
+<tr>
 
-        <h2>HTTP/2</h2>
+<th>
+Version
+</th>
 
-        <p>
-            HTTP/2 significantly improved website performance by introducing multiplexing, header compression, and server push. These features reduced page load times and improved the browsing experience.
-        </p>
+<th>
+Major Improvements
+</th>
 
-    </section>
+</tr>
 
-    <section class="card">
 
-        <h2>HTTP/3</h2>
+<tr>
 
-        <p>
-            HTTP/3 replaces TCP with QUIC, a protocol built on UDP. This reduces latency, improves reliability, and makes websites load faster even on unstable internet connections.
-        </p>
+<td>
+HTTP/0.9 (1991)
+</td>
 
-    </section>
+<td>
+The first version of HTTP. It only supported simple HTML document transfers and only used the GET method.
+</td>
 
-    <section class="card">
+</tr>
 
-        <h2>HTTP vs HTTPS</h2>
 
-        <table>
 
-            <tr>
-                <th>HTTP</th>
-                <th>HTTPS</th>
-            </tr>
+<tr>
 
-            <tr>
-                <td>Data is not encrypted.</td>
-                <td>Data is encrypted using SSL/TLS.</td>
-            </tr>
+<td>
+HTTP/1.0 (1996)
+</td>
 
-            <tr>
-                <td>Less secure.</td>
-                <td>More secure.</td>
-            </tr>
+<td>
+Introduced headers, status codes, and support for different file types such as images and documents.
+</td>
 
-            <tr>
-                <td>Suitable for public information.</td>
-                <td>Required for passwords, banking, and online shopping.</td>
-            </tr>
+</tr>
 
-            <tr>
-                <td>No padlock icon.</td>
-                <td>Displays a padlock icon in modern browsers.</td>
-            </tr>
 
-        </table>
 
-    </section>
+<tr>
 
-    <section class="card">
+<td>
+HTTP/1.1 (1997)
+</td>
 
-        <h2>Modern Uses of HTTP</h2>
+<td>
+Added persistent connections, allowing browsers to reuse connections and improve loading speed.
+</td>
 
-        <ul>
-            <li>Web applications</li>
-            <li>Cloud computing</li>
-            <li>REST APIs</li>
-            <li>Streaming services</li>
-            <li>Online gaming</li>
-            <li>Mobile applications</li>
-            <li>IoT (Internet of Things)</li>
-        </ul>
+</tr>
 
-    </section>
 
-    <section class="card">
 
-        <h2>The Future of HTTP</h2>
+<tr>
 
-        <p>
-            Future improvements will likely continue to focus on increasing speed, reducing latency, improving privacy, and supporting new internet technologies. As web applications become more advanced, HTTP will continue evolving to meet those needs.
-        </p>
+<td>
+HTTP/2 (2015)
+</td>
 
-        <a href="concepts.html" class="button">Learn Key Concepts</a>
+<td>
+Introduced multiplexing, header compression, and improved performance for modern websites.
+</td>
 
-    </section>
+</tr>
+
+
+
+<tr>
+
+<td>
+HTTP/3 (2022)
+</td>
+
+<td>
+Uses QUIC instead of TCP to reduce latency and improve reliability.
+</td>
+
+</tr>
+
+
+</table>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="card">
+
+
+<h2>HTTP/0.9</h2>
+
+
+<p>
+HTTP/0.9 was the original version of the protocol. It was designed for the early World Wide Web and had very limited functionality.
+</p>
+
+
+<ul>
+
+<li>
+Only supported HTML files
+</li>
+
+<li>
+Used only GET requests
+</li>
+
+<li>
+Did not support headers or status codes
+</li>
+
+</ul>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="card">
+
+
+<h2>HTTP/1.0</h2>
+
+
+<p>
+HTTP/1.0 expanded the capabilities of the web by introducing headers and allowing different types of content to be transferred.
+</p>
+
+
+<p>
+This version made websites more flexible because browsers could identify different resources such as images, videos, and documents.
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="card">
+
+
+<h2>HTTP/1.1</h2>
+
+
+<p>
+HTTP/1.1 became the standard version used for many years. It improved efficiency by allowing persistent connections, meaning browsers could communicate with servers without creating a new connection for every request.
+</p>
+
+
+<ul>
+
+<li>
+Faster webpage loading
+</li>
+
+<li>
+Better caching support
+</li>
+
+<li>
+Improved connection management
+</li>
+
+</ul>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="card">
+
+
+<h2>HTTP/2</h2>
+
+
+<p>
+HTTP/2 was designed to improve performance as websites became larger and more complex.
+</p>
+
+
+<ul>
+
+<li>
+Multiplexing allows multiple requests at the same time.
+</li>
+
+<li>
+Header compression reduces unnecessary data.
+</li>
+
+<li>
+Server push allows servers to send resources before they are requested.
+</li>
+
+</ul>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="card">
+
+
+<h2>HTTP/3</h2>
+
+
+<p>
+HTTP/3 is the newest version of HTTP. Instead of using TCP like previous versions, HTTP/3 uses QUIC, which improves speed and reliability.
+</p>
+
+
+<ul>
+
+<li>
+Lower connection delays
+</li>
+
+<li>
+Better performance on unstable networks
+</li>
+
+<li>
+Improved mobile browsing experience
+</li>
+
+</ul>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="card">
+
+
+<h2>HTTP vs HTTPS</h2>
+
+
+<table>
+
+
+<tr>
+
+<th>
+HTTP
+</th>
+
+<th>
+HTTPS
+</th>
+
+</tr>
+
+
+<tr>
+
+<td>
+Data is transferred without encryption.
+</td>
+
+<td>
+Data is encrypted using SSL/TLS.
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Less secure for sensitive information.
+</td>
+
+<td>
+Protects passwords, payments, and personal data.
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Uses HTTP protocol only.
+</td>
+
+<td>
+Uses HTTP with an additional security layer.
+</td>
+
+</tr>
+
+
+</table>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="card">
+
+
+<h2>Modern Uses of HTTP</h2>
+
+
+<p>
+Today HTTP is used in almost every online service. It is the foundation behind many technologies people use every day.
+</p>
+
+
+<ul>
+
+<li>
+Websites
+</li>
+
+<li>
+Mobile applications
+</li>
+
+<li>
+Cloud services
+</li>
+
+<li>
+REST APIs
+</li>
+
+<li>
+Streaming platforms
+</li>
+
+<li>
+Internet of Things devices
+</li>
+
+</ul>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="card">
+
+
+<h2>The Future of HTTP</h2>
+
+
+<p>
+As internet technology continues to grow, HTTP will continue improving. Future updates will focus on faster communication, stronger privacy protections, and better support for advanced applications.
+</p>
+
+
+<a href="concepts.html" class="button">
+Learn Key Concepts
+</a>
+
+
+<a href="quiz.html" class="button">
+Take Quiz
+</a>
+
+
+</section>
+
+
+
+
 
 </main>
 
+
+
+
+
 <footer>
 
-    <p>
-        Created by Dejah Adamson | IT3203 Web Development Project
-    </p>
+<p>
+Created by Dejah Adamson | IT3203 Web Development Project
+</p>
 
 </footer>
+
+
+
 
 </body>
 
