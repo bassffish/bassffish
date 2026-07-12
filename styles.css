@@ -559,3 +559,51 @@ nav a{
 
 
 }
+/* REFERENCES PAGE */
+
+.references-container{
+
+    display:block;
+
+    max-width:1100px;
+
+}
+
+
+.references-container .card{
+
+    margin-bottom:30px;
+
+}
+
+
+.references-container .card:hover{
+
+    transform:none;
+
+}
+
+
+.references-container table{
+
+    width:100%;
+
+    font-size:15px;
+
+}
+
+
+.references-container td{
+
+    vertical-align:top;
+
+}
+
+
+.references-container ul{
+
+    margin-left:25px;
+
+    line-height:2;
+
+}
