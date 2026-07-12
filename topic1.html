@@ -2,14 +2,10 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>HTTP Basics</title>
-
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
@@ -22,14 +18,13 @@
 
     <nav>
         <ul>
-
             <li><a href="index.html">Home</a></li>
             <li><a class="active" href="topic1.html">HTTP Basics</a></li>
             <li><a href="topic2.html">Evolution</a></li>
             <li><a href="concepts.html">Key Concepts</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
             <li><a href="references.html">References</a></li>
             <li><a href="about.html">About Me</a></li>
-
         </ul>
     </nav>
 
@@ -40,7 +35,7 @@
     <h1>HTTP Basics</h1>
 
     <p>
-        Understanding how web browsers and servers communicate using requests and responses.
+        Learn how web browsers and servers communicate using the Hypertext Transfer Protocol.
     </p>
 
 </section>
@@ -49,109 +44,184 @@
 
     <section class="card">
 
+        <img src="images/browser-server.png" alt="Browser communicating with a web server" class="banner-image">
+
         <h2>What is HTTP?</h2>
 
         <p>
-            HTTP (Hypertext Transfer Protocol) is the system that allows communication between
-            web browsers and web servers. Every time you open a website, click a link, or load
-            an image, HTTP is working behind the scenes to transfer that information.
+            HTTP stands for <strong>Hypertext Transfer Protocol</strong>. It is the standard communication protocol used by web browsers and web servers to exchange information over the internet.
         </p>
 
         <p>
-            It acts like a set of rules that both the browser and server follow so they can
-            understand each other and exchange data correctly.
+            Every time you visit a website, your browser sends an HTTP request to a server. The server processes that request and returns an HTTP response containing the requested webpage, images, videos, or other files.
         </p>
 
     </section>
+
     <section class="card">
 
         <h2>How HTTP Works</h2>
 
+        <ol>
+            <li>You enter a website address (URL).</li>
+            <li>Your browser sends an HTTP request.</li>
+            <li>The server receives and processes the request.</li>
+            <li>The server sends an HTTP response.</li>
+            <li>Your browser displays the webpage.</li>
+        </ol>
+
         <p>
-            HTTP works using a simple request and response system:
+            This entire process usually takes only a fraction of a second.
         </p>
 
-        <ol>
+    </section>
 
-            <li>The browser sends a request to a web server.</li>
-            <li>The server receives and processes the request.</li>
-            <li>The server sends back a response.</li>
-            <li>The browser displays the content to the user.</li>
+    <section class="card">
 
-        </ol>
+        <h2>Client-Server Model</h2>
+
+        <p>
+            HTTP uses a client-server architecture. The client is usually a web browser, while the server stores website files and responds to requests.
+        </p>
 
         <table>
 
             <tr>
-                <th>Step</th>
-                <th>Description</th>
+                <th>Client</th>
+                <th>Server</th>
             </tr>
 
             <tr>
-                <td>Request</td>
-                <td>Browser asks the server for a webpage or resource.</td>
+                <td>Sends requests</td>
+                <td>Processes requests</td>
             </tr>
 
             <tr>
-                <td>Processing</td>
-                <td>Server finds or generates the requested content.</td>
+                <td>Displays webpages</td>
+                <td>Stores website files</td>
             </tr>
 
             <tr>
-                <td>Response</td>
-                <td>Server sends the data back to the browser.</td>
+                <td>Receives responses</td>
+                <td>Sends responses</td>
             </tr>
 
         </table>
 
     </section>
+
     <section class="card">
 
-        <h2>Request & Response Flow</h2>
+        <h2>Common HTTP Methods</h2>
 
-        <img src="images/request-response.png"
-             alt="HTTP request response diagram"
-             class="banner-image">
+        <table>
 
-        <p>
-            This diagram shows how a browser sends a request to a server and receives a response.
-            This cycle happens every time you interact with a website.
-        </p>
+            <tr>
+                <th>Method</th>
+                <th>Purpose</th>
+            </tr>
+
+            <tr>
+                <td>GET</td>
+                <td>Retrieves information from a server.</td>
+            </tr>
+
+            <tr>
+                <td>POST</td>
+                <td>Sends data to a server.</td>
+            </tr>
+
+            <tr>
+                <td>PUT</td>
+                <td>Updates existing information.</td>
+            </tr>
+
+            <tr>
+                <td>DELETE</td>
+                <td>Removes information from a server.</td>
+            </tr>
+
+        </table>
 
     </section>
 
     <section class="card">
 
-        <h2>Why HTTP is Important</h2>
+        <h2>Common HTTP Status Codes</h2>
+
+        <table>
+
+            <tr>
+                <th>Status Code</th>
+                <th>Meaning</th>
+            </tr>
+
+            <tr>
+                <td>200</td>
+                <td>OK - The request was successful.</td>
+            </tr>
+
+            <tr>
+                <td>301</td>
+                <td>Moved Permanently.</td>
+            </tr>
+
+            <tr>
+                <td>403</td>
+                <td>Forbidden.</td>
+            </tr>
+
+            <tr>
+                <td>404</td>
+                <td>Page Not Found.</td>
+            </tr>
+
+            <tr>
+                <td>500</td>
+                <td>Internal Server Error.</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Why HTTP Matters</h2>
 
         <ul>
-
-            <li>It allows websites to load properly.</li>
-            <li>It transfers images, text, and videos.</li>
-            <li>It supports web applications and APIs.</li>
-            <li>It connects browsers and servers worldwide.</li>
-
+            <li>Loads websites and web applications.</li>
+            <li>Transfers images, videos, and files.</li>
+            <li>Supports APIs used by mobile apps.</li>
+            <li>Allows communication between browsers and servers.</li>
+            <li>Makes online shopping, banking, and streaming possible.</li>
         </ul>
 
+    </section>
+
+    <section class="card">
+
+        <h2>HTTP is Stateless</h2>
+
         <p>
-            Without HTTP, the modern internet would not function because there would be no
-            standard way for devices to communicate.
+            HTTP does not automatically remember previous requests. Every request is treated as a completely new interaction between the browser and the server.
+        </p>
+
+        <p>
+            Websites use cookies and sessions to remember users after they log in or add items to an online shopping cart.
         </p>
 
     </section>
+
     <section class="card">
 
-        <h2>Stateless System</h2>
+        <h2>What's Next?</h2>
 
         <p>
-            HTTP is considered stateless, meaning each request is independent.
-            The server does not automatically remember previous requests.
+            Now that you understand the basics of HTTP, continue to the next section to learn how HTTP has evolved over the years and how modern versions have improved speed, efficiency, and security.
         </p>
 
-        <p>
-            Because of this, technologies like cookies and sessions are used to
-            keep users logged in and store information such as shopping carts.
-        </p>
+        <a href="topic2.html" class="button">Continue to Evolution</a>
 
     </section>
 
@@ -160,14 +230,10 @@
 <footer>
 
     <p>
-        This website was created as a class project for
-        <a href="https://ksuweb.github.io/IT3203/" target="_blank">
-            IT3203 Web Development
-        </a>.
+        Created by Dejah Adamson | IT3203 Web Development Project
     </p>
 
 </footer>
 
 </body>
-
 </html>
