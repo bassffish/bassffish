@@ -6,30 +6,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>HTTP Key Concepts</title>
+    <title>HTTP Concepts</title>
 
     <link rel="stylesheet" href="styles.css">
 
 </head>
 
+
 <body>
+
 
 <header>
 
-    <div class="logo">
-        <h2>The World of HTTP</h2>
-    </div>
+    <h1>HTTP Concepts</h1>
 
     <nav>
 
         <ul>
+
             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="topic1.html">HTTP Basics</a></li>
             <li><a href="topic2.html">Evolution</a></li>
-            <li><a class="active" href="concepts.html">Key Concepts</a></li>
+            <li><a href="concepts.html">Concepts</a></li>
             <li><a href="quiz.html">Quiz</a></li>
             <li><a href="references.html">References</a></li>
-            <li><a href="about.html">About Me</a></li>
+
         </ul>
 
     </nav>
@@ -37,238 +39,127 @@
 </header>
 
 
+
+<main>
+
+
 <section class="hero">
 
-    <h1>Key Concepts of HTTP</h1>
+    <h1>Important HTTP Concepts</h1>
 
     <p>
-        Explore important terms and technologies that help explain how websites communicate across the internet.
+        HTTP relies on several important concepts that allow websites and
+        applications to communicate effectively across the internet.
     </p>
 
 </section>
 
 
-<main class="container">
 
+<section class="content-container">
 
-    <section class="card">
 
-        <h2>HTTP</h2>
+<div class="card">
 
-        <p>
-            HTTP (Hypertext Transfer Protocol) is the communication protocol used by browsers and servers to exchange information. It defines how requests are sent and how responses are returned.
-        </p>
+    <h2>Client and Server</h2>
 
-    </section>
+    <p>
+        HTTP communication happens between a client and a server. The client
+        is usually a web browser that requests information, while the server
+        stores and provides the requested resources.
+    </p>
 
+</div>
 
-    <section class="card">
 
-        <h2>HTTPS</h2>
 
-        <p>
-            HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP. It uses SSL/TLS encryption to protect sensitive information such as passwords, payment information, and personal data.
-        </p>
+<div class="card">
 
-    </section>
+    <h2>URLs</h2>
 
+    <p>
+        A Uniform Resource Locator (URL) is the address used to locate
+        resources on the internet. URLs tell browsers where to find webpages,
+        files, and other online content.
+    </p>
 
-    <section class="card">
+</div>
 
-        <h2>URL</h2>
 
-        <p>
-            A URL (Uniform Resource Locator) is the address used to locate a resource on the internet. It tells a browser where to find a webpage, image, or file.
-        </p>
 
-    </section>
+<div class="card">
 
+    <h2>Cookies</h2>
 
-    <section class="card">
+    <p>
+        Cookies are small pieces of data stored by websites on a user's device.
+        They help websites remember information such as login sessions,
+        preferences, and user activity.
+    </p>
 
-        <h2>Web Browser</h2>
+</div>
 
-        <p>
-            A web browser is software used to access websites. Examples include Google Chrome, Microsoft Edge, Firefox, and Safari.
-        </p>
 
-    </section>
 
+<div class="card">
 
-    <section class="card">
+    <h2>HTTP Headers</h2>
 
-        <h2>Web Server</h2>
+    <p>
+        Headers provide additional information about HTTP requests and
+        responses. They can include details about content type, browser
+        information, authentication, and caching.
+    </p>
 
-        <p>
-            A web server is a computer system that stores website files and delivers content when it receives requests from users.
-        </p>
+</div>
 
-    </section>
 
 
-    <section class="card">
+<div class="card">
 
-        <h2>Client</h2>
+    <h2>HTTPS Security</h2>
 
-        <p>
-            A client is a device or application that requests information from a server. A browser running on a computer or smartphone is an example of a client.
-        </p>
+    <p>
+        HTTPS is the secure version of HTTP. It uses encryption through
+        SSL/TLS certificates to protect information exchanged between users
+        and websites.
+    </p>
 
-    </section>
+</div>
 
 
-    <section class="card">
 
-        <h2>Request</h2>
+<div class="card">
 
-        <p>
-            An HTTP request is a message sent from a client to a server asking for a resource such as a webpage, image, or data.
-        </p>
+    <h2>Caching</h2>
 
-    </section>
+    <p>
+        Caching allows frequently used website resources to be stored and
+        reused. This improves loading speed and reduces the amount of data
+        that needs to be transferred.
+    </p>
 
+</div>
 
-    <section class="card">
 
-        <h2>Response</h2>
 
-        <p>
-            An HTTP response is the message returned by a server after receiving a request. It usually contains requested data and a status code.
-        </p>
-
-    </section>
-
-
-    <section class="card">
-
-        <h2>HTTP Methods</h2>
-
-        <p>
-            HTTP methods describe what action a client wants to perform. Common methods include GET, POST, PUT, and DELETE.
-        </p>
-
-        <ul>
-            <li>GET - Retrieve information</li>
-            <li>POST - Send information</li>
-            <li>PUT - Update information</li>
-            <li>DELETE - Remove information</li>
-        </ul>
-
-    </section>
-
-
-    <section class="card">
-
-        <h2>Status Codes</h2>
-
-        <p>
-            HTTP status codes tell the client whether a request was successful or if an error occurred.
-        </p>
-
-        <ul>
-            <li>200 - Successful request</li>
-            <li>301 - Resource moved</li>
-            <li>403 - Access denied</li>
-            <li>404 - Page not found</li>
-            <li>500 - Server error</li>
-        </ul>
-
-    </section>
-
-
-    <section class="card">
-
-        <h2>DNS</h2>
-
-        <p>
-            DNS (Domain Name System) translates website names into IP addresses. This allows users to type easy-to-remember names instead of numerical addresses.
-        </p>
-
-    </section>
-
-
-    <section class="card">
-
-        <h2>Cookies</h2>
-
-        <p>
-            Cookies are small pieces of data stored by a browser. Websites use cookies to remember preferences, login information, and user activity.
-        </p>
-
-    </section>
-
-
-    <section class="card">
-
-        <h2>Sessions</h2>
-
-        <p>
-            Sessions allow websites to remember users while they interact with a website. They are commonly used for login systems and shopping carts.
-        </p>
-
-    </section>
-
-
-    <section class="card">
-
-        <h2>API</h2>
-
-        <p>
-            An API (Application Programming Interface) allows different software applications to communicate using HTTP requests and responses.
-        </p>
-
-        <p>
-            Many mobile applications and websites rely on APIs to exchange information with servers.
-        </p>
-
-    </section>
-
-
-    <section class="card">
-
-        <h2>SSL/TLS</h2>
-
-        <p>
-            SSL/TLS provides encryption and security for HTTPS connections. It protects information while it travels between a browser and server.
-        </p>
-
-    </section>
-
-
-    <section class="card">
-
-        <h2>Cache</h2>
-
-        <p>
-            A cache stores frequently used information so it can be loaded faster in the future. Browsers use caching to improve website performance.
-        </p>
-
-    </section>
-
-
-    <section class="card">
-
-        <h2>Continue Learning</h2>
-
-        <p>
-            Now that you understand the major concepts behind HTTP, test your knowledge by completing the interactive quiz.
-        </p>
-
-        <a href="quiz.html" class="button">Take the Quiz</a>
-
-    </section>
+</section>
 
 
 </main>
 
 
+
 <footer>
 
+    <p>HTTP Website Project</p>
+
     <p>
-        Created by Dejah Adamson | IT3203 Web Development Project
+        Created using HTML, CSS, and JavaScript
     </p>
 
 </footer>
+
 
 
 </body>
