@@ -12,25 +12,25 @@
 
 </head>
 
+
 <body>
+
 
 <header>
 
-    <div class="logo">
-        <h2>The World of HTTP</h2>
-    </div>
+    <h1>HTTP Self-Assessment Quiz</h1>
 
     <nav>
 
         <ul>
 
             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="topic1.html">HTTP Basics</a></li>
             <li><a href="topic2.html">Evolution</a></li>
-            <li><a href="concepts.html">Key Concepts</a></li>
-            <li><a class="active" href="quiz.html">Quiz</a></li>
+            <li><a href="concepts.html">Concepts</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
             <li><a href="references.html">References</a></li>
-            <li><a href="about.html">About Me</a></li>
 
         </ul>
 
@@ -39,208 +39,186 @@
 </header>
 
 
+
+<main>
+
+
 <section class="hero">
 
-    <h1>HTTP Knowledge Quiz</h1>
+    <h1>Test Your Knowledge</h1>
 
     <p>
-        Test your understanding of HTTP concepts, versions, and web communication.
+        Complete the questions below to test your understanding of HTTP.
+        Your score will be calculated after submission.
     </p>
 
 </section>
 
 
-<main class="container">
 
+<section class="quiz-container">
 
-    <section class="card">
 
-        <form id="quizForm">
+<form id="httpQuiz">
 
 
-            <div class="quiz-question">
+<div class="quiz-question">
 
-                <h3>1. Fill in the Blank</h3>
+    <h3>1. Fill in the blank:</h3>
 
-                <p>
-                    HTTP stands for:
-                </p>
+    <p>
+        HTTP stands for Hypertext __________ Protocol.
+    </p>
 
-                <input
-                        type="text"
-                        id="q1"
-                        placeholder="Enter your answer">
+    <input type="text" id="q1">
 
-            </div>
+</div>
 
 
 
-            <div class="quiz-question">
+<div class="quiz-question">
 
-                <h3>2. Multiple Choice</h3>
+    <h3>2. Which device usually sends an HTTP request?</h3>
 
-                <p>
-                    What is the main purpose of HTTP?
-                </p>
+    <label>
+        <input type="radio" name="q2" value="browser">
+        Web Browser
+    </label>
 
-                <label>
-                    <input type="radio" name="q2" value="correct">
-                    To transfer information between browsers and servers
-                </label>
+    <label>
+        <input type="radio" name="q2" value="server">
+        Server
+    </label>
 
-                <label>
-                    <input type="radio" name="q2" value="wrong">
-                    To create computer hardware
-                </label>
+    <label>
+        <input type="radio" name="q2" value="router">
+        Router
+    </label>
 
-                <label>
-                    <input type="radio" name="q2" value="wrong">
-                    To replace operating systems
-                </label>
+</div>
 
-                <label>
-                    <input type="radio" name="q2" value="wrong">
-                    To store files permanently
-                </label>
 
-            </div>
 
+<div class="quiz-question">
 
+    <h3>3. Which HTTP method is used to retrieve information?</h3>
 
-            <div class="quiz-question">
+    <label>
+        <input type="radio" name="q3" value="GET">
+        GET
+    </label>
 
-                <h3>3. Multiple Choice</h3>
+    <label>
+        <input type="radio" name="q3" value="POST">
+        POST
+    </label>
 
-                <p>
-                    Which HTTP version introduced multiplexing?
-                </p>
+    <label>
+        <input type="radio" name="q3" value="DELETE">
+        DELETE
+    </label>
 
-                <label>
-                    <input type="radio" name="q3" value="wrong">
-                    HTTP/0.9
-                </label>
+</div>
 
-                <label>
-                    <input type="radio" name="q3" value="wrong">
-                    HTTP/1.0
-                </label>
 
-                <label>
-                    <input type="radio" name="q3" value="correct">
-                    HTTP/2
-                </label>
 
-                <label>
-                    <input type="radio" name="q3" value="wrong">
-                    HTTP/1.1
-                </label>
+<div class="quiz-question">
 
-            </div>
+    <h3>4. Which HTTP version introduced multiplexing?</h3>
 
+    <label>
+        <input type="radio" name="q4" value="HTTP1">
+        HTTP/1.1
+    </label>
 
+    <label>
+        <input type="radio" name="q4" value="HTTP2">
+        HTTP/2
+    </label>
 
-            <div class="quiz-question">
+    <label>
+        <input type="radio" name="q4" value="HTTP3">
+        HTTP/3
+    </label>
 
-                <h3>4. Multiple Choice</h3>
+</div>
 
-                <p>
-                    Which protocol provides secure communication using encryption?
-                </p>
 
-                <label>
-                    <input type="radio" name="q4" value="wrong">
-                    HTTP
-                </label>
 
-                <label>
-                    <input type="radio" name="q4" value="correct">
-                    HTTPS
-                </label>
+<div class="quiz-question">
 
-                <label>
-                    <input type="radio" name="q4" value="wrong">
-                    FTP
-                </label>
+    <h3>
+        5. Select all features related to HTTPS security:
+    </h3>
 
-                <label>
-                    <input type="radio" name="q4" value="wrong">
-                    DNS
-                </label>
 
-            </div>
+    <label>
+        <input type="checkbox" name="q5" value="encryption">
+        Encryption
+    </label>
 
 
+    <label>
+        <input type="checkbox" name="q5" value="ssl">
+        SSL/TLS Certificates
+    </label>
 
-            <div class="quiz-question">
 
-                <h3>5. Multi-Selection</h3>
+    <label>
+        <input type="checkbox" name="q5" value="password">
+        Password Storage
+    </label>
 
-                <p>
-                    Which of the following are benefits of modern HTTP versions?
-                    (Select all that apply)
-                </p>
 
+    <label>
+        <input type="checkbox" name="q5" value="security">
+        Secure Data Transfer
+    </label>
 
-                <label>
-                    <input type="checkbox" name="q5" value="correct">
-                    Faster data transfer
-                </label>
 
+</div>
 
-                <label>
-                    <input type="checkbox" name="q5" value="correct">
-                    Improved performance
-                </label>
 
 
-                <label>
-                    <input type="checkbox" name="q5" value="correct">
-                    Better security support
-                </label>
+<button type="button" class="quiz-button" onclick="checkQuiz()">
+    Submit Quiz
+</button>
 
 
-                <label>
-                    <input type="checkbox" name="q5" value="wrong">
-                    Requires users to install a new browser every day
-                </label>
+<button type="reset" class="quiz-button" onclick="resetQuiz()">
+    Reset
+</button>
 
 
-            </div>
 
+</form>
 
 
-            <button type="button" onclick="gradeQuiz()">
-                Submit Quiz
-            </button>
 
+<div id="quizResult"></div>
 
-            <button type="reset" onclick="resetQuiz()">
-                Reset Quiz
-            </button>
 
 
-        </form>
-
-
-        <div id="results"></div>
-
-
-    </section>
+</section>
 
 
 </main>
 
 
+
 <footer>
 
+    <p>HTTP Website Project</p>
+
     <p>
-        Created by Dejah Adamson | IT3203 Web Development Project
+        Created using HTML, CSS, and JavaScript
     </p>
 
 </footer>
 
 
-<script src="quiz.js"></script>
+
+<script src="script.js"></script>
 
 
 </body>
